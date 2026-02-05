@@ -21,8 +21,8 @@ body{
 
     font-family: "Roboto Slab", sans-serif;
     font-size: 16px;
-    line-height: 1.5;
-    background-color: #1c1c1c;
+    line-height: 1;
+    background: #1c1c1c;
     color: #fff;
 }
 /*! Стили для ссылок 
@@ -60,6 +60,11 @@ p{
     margin: 0;
     padding: 0;
 }
+
+img{
+    max-width: 100%;
+}
+
 /*! Общая обертка для всего контента 
   /*?  max-width: 1400px - максимальная ширина контента
   /*?  margin: 0 auto - центрируем контент  */
@@ -107,7 +112,7 @@ p{
   /*?  border-radius: 10px - скругление углов
   /*?  padding: 10px - отступы
   /*?  transition: all 0.3s ease - плавное изменение цвета при наведении */
-.header__btn {
+.btn {
     font-weight: 700;
     background: #009b95;
     border-radius: 10px;
@@ -117,7 +122,72 @@ p{
 /*! Стили для псевлдокласса :hover 
   /*?  transform: scale(1.1) - увеличиваем элемент на 10%
   /*?  opacity: 0.7 - делаем прозрачность элемента на 30%  */
-.header__btn:hover{
+.btn:hover{
     transform: scale(1.1);
     opacity: 0.7;
 }
+
+
+/** Секция приветствие */
+
+
+.cards .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    
+    
+}
+
+.cards__item {
+    width: 100%;
+    overflow: hidden;
+    background: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    padding-bottom: 40px;
+}
+
+
+.cards__text {
+    text-align: center;
+}
+
+.cards__title {
+    font-size: 19px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.cards__paragraph {
+    opacity: 0.8;
+    padding-bottom: 40px;
+}
+
+.cards__image {
+    width: 100%;
+    height: 235px;
+    object-fit: cover;
+}
+
+.cards .btn{
+    display: flex;
+    width: 20%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* .cards__btn {
+    font-weight: 700;
+    background: #009b95;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.cards__btn:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+} */
+
+
