@@ -1,60 +1,123 @@
+/*! Подключения шрифтов */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
-
+/** Общие стили */
+/*! Стили для всего документа 
+  /*?  margin: 0 - убираем внешние отступы
+  /*?  padding: 0 - убираем внутренние отступы  */
 *{
     margin: 0;
     padding: 0;
 }
-/** Общие стили */
+
+/*! Стили для тела сайта */
 body{
+    /*!
+  /*?  font-family: "Roboto Slab", sans-serif - подключаем шрифт
+  /*?  font-size: 16px - размер шрифта
+  /*?  line-height: 1.5 - высота строки
+  /*?  background-color: #1c1c1c - цвет фона
+  /*?  color: #fff - цвет текста  */
+
     font-family: "Roboto Slab", sans-serif;
     font-size: 16px;
     line-height: 1.5;
-;
     background-color: #1c1c1c;
     color: #fff;
 }
-
+/*! Стили для ссылок 
+  /*?   color: #fff - цвет текста
+  /*?   text-decoration: none - убираем подчеркивание  */
 a{
     color: #fff;
     text-decoration: none;
 
 }
+/*! Стили для списков 
+  /*?   list-style: none - убираем маркеры
+  /*?   padding: 0 - убираем внешние отступы
+  /*?   margin: 0 - убираем внутренние отступы  */
 
 ul{
     list-style: none;
     padding: 0;
     margin: 0;
 }
+/*! Стили шдля заголовков 
+  /*?   margin: 0 - убираем внешние отступы
+  /*?   padding: 0 - убираем внутренние отступы
+  /*?   font-weight: 600 - жирный шрифт */
 
 h1,h2,h3,h4,h5,h6{
     margin: 0;
     padding: 0;
     font-weight: 600;
 }
-
-/*& Стили шапки  */
-.header {
-    
+/*! Стили для параграфов 
+  /*?  margin: 0 - убираем внешние отступы */
+  /*?  padding: 0 - убираем внутренние отступы  */ */
+p{
+    margin: 0;
+    padding: 0;
+}
+/*! Общая обертка для всего контента 
+  /*?  max-width: 1400px - максимальная ширина контента
+  /*?  margin: 0 auto - центрируем контент  */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
+/*! Стили шапки  */
+.header {
+    /*? Отступы от верхнего края */
+    padding: 25px 0;
+}
+ /*! Обертка для контента Header*/
 .header .container {
+    /*? Задаем дисплей флекс модель для того что бы элементы распологались в ряд */ 
+    /*?  justify-content: space-between - распологаем элементы по краям */
+    /*?  align-items: center - выравниваем элементы по центру */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+/*! Стили для логотипа 
+  /*?  width: 50px - ширина логотипа
+  /*?  height: 50px - высота логотипа  */
 .header__logo {
     width: 50px;
     height: 50px;
 
 }
-.headeh__nav {
+/*! Стили для навигации (пока не используется) */
+.header__nav {
     
 }
+/*! Стили для элементов списка 
+  /*?  display: flex - распологаем элементы в ряд
+  /*?  gap: 30px - расстояние между элементами  */
 .header__list {
     display: flex;
     gap: 30px;
 }
-.btn {
-
+/*! Стили для ссылки с классом header__btn 
+  /*?  font-weight: 700 - жирный шрифт
+  /*?  background: #009b95 - цвет фона
+  /*?  border-radius: 10px - скругление углов
+  /*?  padding: 10px - отступы
+  /*?  transition: all 0.3s ease - плавное изменение цвета при наведении */
+.header__btn {
+    font-weight: 700;
+    background: #009b95;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+/*! Стили для псевлдокласса :hover 
+  /*?  transform: scale(1.1) - увеличиваем элемент на 10%
+  /*?  opacity: 0.7 - делаем прозрачность элемента на 30%  */
+.header__btn:hover{
+    transform: scale(1.1);
+    opacity: 0.7;
 }
