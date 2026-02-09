@@ -96,9 +96,9 @@ img{
 
 }
 /*! Стили для навигации (пока не используется) */
-.header__nav {
+/* .header__nav {
     
-}
+} */
 /*! Стили для элементов списка 
   /*?  display: flex - распологаем элементы в ряд
   /*?  gap: 30px - расстояние между элементами  */
@@ -131,15 +131,14 @@ img{
 /** Секция приветствие */
 
 
-.cards .container {
+.cards-choise .container {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    
-    
+    padding: 25px 0;
 }
 
-.cards__item {
+.cards-choise__item {
     width: 100%;
     overflow: hidden;
     background: #000000;
@@ -149,45 +148,110 @@ img{
 }
 
 
-.cards__text {
+.cards-choise__text {
     text-align: center;
 }
 
-.cards__title {
+.cards-choise__title {
     font-size: 19px;
     padding-bottom: 10px;
     padding-top: 10px;
 }
 
-.cards__paragraph {
+.cards-choise__paragraph {
     opacity: 0.8;
     padding-bottom: 40px;
 }
 
-.cards__image {
+.cards-choise__image {
     width: 100%;
     height: 235px;
     object-fit: cover;
 }
 
-.cards .btn{
+.cards-choise .btn{
     display: flex;
     width: 20%;
     text-align: center;
     margin: 0 auto;
 }
 
-/* .cards__btn {
-    font-weight: 700;
-    background: #009b95;
-    border-radius: 10px;
-    padding: 10px;
-    transition: all 0.3s ease;
+
+/** Секция действия */
+
+
+.action .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
 }
 
-.cards__btn:hover {
-    transform: scale(1.1);
+.action__img {
+    max-width: 700px;
+}
+
+.action__item{
+    background: #000000;
+    border-radius: 10px;
+    
+    padding: 20px;
+    margin-right: 80px;
+}
+
+.action__text {
+    max-width: 430px;
+    text-align: center;
+}
+
+.action__title {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.action__paragraph {
+    font-size: 20px;
+    padding-bottom: 25px;
     opacity: 0.7;
+}
+
+.action .btn{
+    display: flex;
+    width: 19%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/** Секция карточек асортимента  */
+
+.cards-assortment {
+
+}
+
+.container {
+
+}
+
+.cards-assortment__item {
+
+}
+
+/* .cards-assortment__image {
+
 } */
 
+.cards-assortment__text {
 
+}
+
+.cards-assortment__title {
+
+}
+
+.cards-assortment__paragraph {
+
+}
+
+.btn {
+
+}
