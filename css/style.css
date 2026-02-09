@@ -2,69 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 /** Общие стили */
-/*! Стили для всего документа 
-  /*?  margin: 0 - убираем внешние отступы
-  /*?  padding: 0 - убираем внутренние отступы  */
-*{
-    margin: 0;
-    padding: 0;
-}
-
-/*! Стили для тела сайта */
-body{
-    /*!
-  /*?  font-family: "Roboto Slab", sans-serif - подключаем шрифт
-  /*?  font-size: 16px - размер шрифта
-  /*?  line-height: 1.5 - высота строки
-  /*?  background-color: #1c1c1c - цвет фона
-  /*?  color: #fff - цвет текста  */
-
-    font-family: "Roboto Slab", sans-serif;
-    font-size: 16px;
-    line-height: 1;
-    background: #1c1c1c;
-    color: #fff;
-}
-/*! Стили для ссылок 
-  /*?   color: #fff - цвет текста
-  /*?   text-decoration: none - убираем подчеркивание  */
-a{
-    color: #fff;
-    text-decoration: none;
-
-}
-/*! Стили для списков 
-  /*?   list-style: none - убираем маркеры
-  /*?   padding: 0 - убираем внешние отступы
-  /*?   margin: 0 - убираем внутренние отступы  */
-
-ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-/*! Стили шдля заголовков 
-  /*?   margin: 0 - убираем внешние отступы
-  /*?   padding: 0 - убираем внутренние отступы
-  /*?   font-weight: 600 - жирный шрифт */
-
-h1,h2,h3,h4,h5,h6{
-    margin: 0;
-    padding: 0;
-    font-weight: 600;
-}
-/*! Стили для параграфов 
-  /*?  margin: 0 - убираем внешние отступы */
-  /*?  padding: 0 - убираем внутренние отступы  */ */
-p{
-    margin: 0;
-    padding: 0;
-}
-
-img{
-    max-width: 100%;
-}
-
 /*! Общая обертка для всего контента 
   /*?  max-width: 1400px - максимальная ширина контента
   /*?  margin: 0 auto - центрируем контент  */
@@ -224,12 +161,12 @@ img{
 
 /** Секция карточек асортимента  */
 
-.cards-assortment {
 
-}
 
-.container {
 
+
+.cards-assortment .container {
+    display: flex;
 }
 
 .cards-assortment__item {
@@ -245,13 +182,26 @@ img{
 }
 
 .cards-assortment__title {
-
+    font-size: 20px;
 }
 
 .cards-assortment__paragraph {
-
+    font-size: 18px;
+    padding: 20px 0;
 }
 
 .btn {
 
+}
+.cards-wood{
+    background-image: url("images/");
+}
+.cards-hiteck{
+    background-image: url("images/");
+}
+.cards-bunya{
+    background-image: url("images/");
+}
+.cards-uchastok{
+    background-image: url("images/");
 }
