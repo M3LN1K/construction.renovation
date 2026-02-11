@@ -189,10 +189,6 @@ ul li{
 
 /** Секция карточек аcсортимента  */
 
-
-
-
-
 .cards-assortment .container {
 
 }
@@ -207,9 +203,6 @@ ul li{
 
 }
 
-/* .cards-assortment__image {
-
-} */
 
 .cards-assortment__text {
     position: absolute;
