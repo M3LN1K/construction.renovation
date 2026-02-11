@@ -1,7 +1,31 @@
 /*! Подключения шрифтов */
+@import "normalize.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
-/** Общие стили */
+/** Стили для главной страницы */
+body{
+    background: #222222;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    color: #ffffff;
+    font-weight: 700;
+    margin: 0;
+}
+
+p{
+    color: #ffffff;
+    font-size: 16px;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+ul li{
+    list-style: none;
+}
 /*! Общая обертка для всего контента 
   /*?  max-width: 1400px - максимальная ширина контента
   /*?  margin: 0 auto - центрируем контент  */
@@ -14,7 +38,9 @@
 .header {
     /*? Отступы от верхнего края */
     padding: 25px 0;
+    background: #222222;
 }
+
  /*! Обертка для контента Header*/
 .header .container {
     /*? Задаем дисплей флекс модель для того что бы элементы распологались в ряд */ 
@@ -55,8 +81,9 @@
     border-radius: 10px;
     padding: 10px;
     transition: all 0.3s ease;
+    color: #ffffff;
 }
-/*! Стили для псевлдокласса :hover 
+/*! Стили для псевдокласса :hover
   /*?  transform: scale(1.1) - увеличиваем элемент на 10%
   /*?  opacity: 0.7 - делаем прозрачность элемента на 30%  */
 .btn:hover{
@@ -87,6 +114,7 @@
 
 .cards-choise__text {
     text-align: center;
+    padding: 0 25px;
 }
 
 .cards-choise__title {
@@ -108,7 +136,7 @@
 
 .cards-choise .btn{
     display: flex;
-    width: 20%;
+    width: 16%;
     text-align: center;
     margin: 0 auto;
 }
@@ -143,33 +171,39 @@
 
 .action__title {
     font-size: 30px;
-    padding-bottom: 10px;
+
 }
 
 .action__paragraph {
     font-size: 20px;
-    padding-bottom: 25px;
+    padding: 15px 20px;
     opacity: 0.7;
 }
 
 .action .btn{
     display: flex;
-    width: 19%;
+    width: 16%;
     text-align: center;
     margin: 0 auto;
 }
 
-/** Секция карточек асортимента  */
+/** Секция карточек аcсортимента  */
 
 
 
 
 
 .cards-assortment .container {
-    display: flex;
+
 }
 
 .cards-assortment__item {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    /*? Делаю картинку по размеру каточки */
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
@@ -178,30 +212,46 @@
 } */
 
 .cards-assortment__text {
+    position: absolute;
+    margin: 40px 10px 40px 320px;
+    padding: 20px 10px;
+    width: 250px;
+    /*border: 2px solid ;*/
+    /*Размытие заднего фона*/
+    backdrop-filter: brightness(50%) blur(2px);
+
+    border-radius: 50px;
+    text-align: center;
 
 }
 
 .cards-assortment__title {
     font-size: 20px;
+    color: #fff;
+
 }
 
 .cards-assortment__paragraph {
-    font-size: 18px;
+    font-size: 16px;
     padding: 20px 0;
+    color: #fff;
 }
 
-.btn {
+.cards-assortment .btn {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
 
 }
 .cards-wood{
-    background-image: url("images/");
+    background-image: url('images/assortment/brus.jpg');
 }
 .cards-hiteck{
-    background-image: url("images/");
+    background-image: url('images/assortment/hi-tek-v2.jpg');
 }
 .cards-bunya{
-    background-image: url("images/");
+    background-image: url('images/assortment/banya.jpg');
 }
 .cards-uchastok{
-    background-image: url("images/");
+    background-image: url('images/assortment/uchastok-v2.jpg');
 }
