@@ -189,10 +189,6 @@ ul li{
 
 /** Секция карточек аcсортимента  */
 
-
-
-
-
 .cards-assortment .container {
     display: flex;
     flex-wrap: wrap;
