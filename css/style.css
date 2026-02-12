@@ -190,7 +190,19 @@ ul li{
 /** Секция карточек аcсортимента  */
 
 .cards-assortment .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap : 30px;
 
+    padding: 25px 0;
+}
+
+.cards-assortment__item {
+    width: 100%;
+    overflow: hidden;;
+    
 }
 
 .cards-assortment__item {
@@ -200,10 +212,14 @@ ul li{
     /*? Делаю картинку по размеру каточки */
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 50px;
 
 }
 
 
+.cards-assortment__item:nth-child(even) .cards-assortment__text{
+    margin: 40px 320px 40px 10px;
+}
 .cards-assortment__text {
     position: absolute;
     margin: 40px 10px 40px 320px;
@@ -237,14 +253,14 @@ ul li{
 
 }
 .cards-wood{
-    background-image: url('images/assortment/brus.jpg');
+    background-image: url('../images/assortment/brus.jpg');
 }
 .cards-hiteck{
-    background-image: url('images/assortment/hi-tek-v2.jpg');
+    background-image: url('../images/assortment/hi-tek-v2.jpg');
 }
 .cards-bunya{
-    background-image: url('images/assortment/banya.jpg');
+    background-image: url('../images/assortment/banya.jpg');
 }
 .cards-uchastok{
-    background-image: url('images/assortment/uchastok-v2.jpg');
+    background-image: url('../images/assortment/uchastok-v2.jpg');
 }
