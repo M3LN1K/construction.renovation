@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
     <title>Строительство домов и ремонт</title>
 </head>
 <body>
@@ -31,14 +33,24 @@
     </header>
     <main>
         <!--* Секция пиветственного слайдера -->
-        <section class="main-slider">
-
-        </section>
+        <section id="mySlider" class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">Slide 01
+                        <img src="images/assortment/brus.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">Slide 02
+                        <img src="images/assortment/hi-tek-v2.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">Slide 03
+                        <img src="images/assortment/banya.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section> 
 
         <!--* Секция карточек -->
         <section class="cards-choise">
-            <!--* Тут будет слайдер, а пока тут будет какой-то текст -->
-            <h2>Тут место под слайдер</h2>
             <div class="container">
                 <div class="cards-choise__item">
                     <img src="images/cards/stroika.jpg" alt="" class="cards-choise__image"> 
@@ -168,12 +180,13 @@
             <div class="footer__contacts">
                 <span>Email: Construct&Renovat@yandex.ru</span><br>
                 <span>Phone: 8 (952) 088 37-30 </span><br>
-                <span>Adress: Komsomolskiy Prospect, 10</span><br>
+                <span>Adress: Komsomolskiy Prospect, 10</span><br><br>
+                <span>Мы в соцсетях:</span>
                 <div class="footer__contacts-social">
-                    <img src="images/svg/social-telegram.svg" alt="">
-                    <img src="images/svg/social-vkontakte.svg" alt="">
-                    <img src="images/svg/social-youtube.svg" alt="">
-                    <img src="images/svg/support.svg" alt="">
+                    <a href=""><img src="images/svg/social-telegram.svg" alt=""></a>
+                    <a href=""><img src="images/svg/social-vkontakte.svg" alt=""></a>
+                    <a href=""><img src="images/svg/social-youtube.svg" alt=""></a>
+                    <a href=""><img src="images/svg/support.svg" alt=""></a>
                 </div>
             </div>
             <div class="footer__map">
@@ -191,4 +204,6 @@
     <br>
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="js/script.js"></script>
 </html>

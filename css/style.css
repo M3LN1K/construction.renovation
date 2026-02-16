@@ -91,13 +91,27 @@ ul li{
     opacity: 0.7;
 }
 
+/** Секция пиветственного слайдера */
+.splide{
+    padding: 25px 0;
+}
 
-/** Секция приветствие */
+.splide__track {
+  max-height: 800px;
+  background: #cc66ff;
+  color: #fff;
+}
 
+.splide__track .splide__slide img {
+  width: 100%;
+  
+};
 
+/** Секция карточек */
 .cards-choise .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 30px;
     padding: 25px 0;
 }
@@ -263,4 +277,31 @@ ul li{
 }
 .cards-uchastok{
     background-image: url('../images/assortment/uchastok-v2.jpg');
+}
+
+
+
+.footer .container {
+    
+}
+
+.footer__contacts {
+
+}
+
+.footer__contacts-social img {
+    width: 32px;
+    
+}
+
+/* Отступы только у второго и третьего элемента */
+.footer__contacts-social a:nth-child(2),
+.footer__contacts-social a:nth-child(3) {
+    padding: 0 5px;
+    /* или margin — зависит от нужды */
+    /* margin: 0 10px; */
+}
+
+.footer__map {
+
 }
