@@ -4,8 +4,10 @@
 
 /** Стили для главной страницы */
 body{
-    background: #222222;
+    /*background: #222222;*/
+    background: #2d4747;
     margin: 0;
+    color: #ffffff;
 }
 h1,h2,h3,h4,h5,h6{
     color: #ffffff;
@@ -190,7 +192,12 @@ ul li{
 /** Секция карточек аcсортимента  */
 
 .cards-assortment .container {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px 0;
 }
 
 .cards-assortment__item {
@@ -200,9 +207,15 @@ ul li{
     /*? Делаю картинку по размеру каточки */
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 50px;
+
+    box-sizing: border-box;
 
 }
-
+/*& Выбирает четкные элементы родителя*/
+.cards-assortment__item:nth-child(even) .cards-assortment__text{
+    margin: 40px 320px 40px 10px;
+}
 
 .cards-assortment__text {
     position: absolute;
@@ -232,19 +245,39 @@ ul li{
 
 .cards-assortment .btn {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     margin: 0 auto;
 
+
 }
 .cards-wood{
-    background-image: url('images/assortment/brus.jpg');
+    background-image: url('../images/assortment/brus.jpg');
 }
 .cards-hiteck{
-    background-image: url('images/assortment/hi-tek-v2.jpg');
+    background-image: url('../images/assortment/hi-tek-v2.jpg');
 }
 .cards-bunya{
-    background-image: url('images/assortment/banya.jpg');
+    background-image: url('../images/assortment/banya.jpg');
 }
 .cards-uchastok{
-    background-image: url('images/assortment/uchastok-v2.jpg');
+    background-image: url('../images/assortment/uchastok-v2.jpg');
+}
+
+
+.footer {
+    background-color: #2d4747;
+}
+
+.container {
+
+}
+
+.footer__contacts {
+
+}
+
+.map {
+
 }
