@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
     <title>Строительство домов и ремонт</title>
 </head>
 <body>
@@ -31,8 +33,20 @@
     </header>
     <main>
         <!--* Секция пиветственного слайдера -->
-        <section class="main-slider">
-
+        <section id="mySlider" class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">Slide 01
+                        <img src="images/assortment/brus.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">Slide 02
+                        <img src="images/assortment/hi-tek-v2.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">Slide 03
+                        <img src="images/assortment/banya.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <!--* Секция карточек -->
@@ -98,6 +112,7 @@
         <section class="cards-assortment">
             <div class="container">
                 <div class="cards-assortment__item cards-wood">
+                    <!-- <img src="" alt="" class="cards-assortment__image"> -->
                     <div class="cards-assortment__text">
                         <h2 class="cards-assortment__title">
                             Дом из дерева
@@ -109,9 +124,11 @@
                         </p>
                         <a href="#" class="btn">Хочу такой дом</a>
                     </div>
+
                 </div>
 
                 <div class="cards-assortment__item cards-bunya">
+                    <!-- <img src="" alt="" class="cards-assortment__image"> -->
                     <div class="cards-assortment__text">
                         <h2 class="cards-assortment__title">
                             Бани
@@ -125,7 +142,9 @@
                     </div>
 
                 </div>
+
                 <div class="cards-assortment__item cards-hiteck">
+                    <!-- <img src="" alt="" class="cards-assortment__image"> -->
                     <div class="cards-assortment__text">
                         <h2 class="cards-assortment__title">
                             Дом в стиле хай-тек
@@ -137,9 +156,11 @@
                         </p>
                         <a href="#" class="btn">Хочу такой дом</a>
                     </div>
+
                 </div>
 
                 <div class="cards-assortment__item cards-uchastok">
+                    <!-- <img src="" alt="" class="cards-assortment__image"> -->
                     <div class="cards-assortment__text">
                         <h2 class="cards-assortment__title">
                             Участки
@@ -151,28 +172,43 @@
                         </p>
                         <a href="#" class="btn">Хочу участок</a>
                     </div>
+
                 </div>
             </div>
-        </section>
-
-        <section>
-            <h2>Слайдер с отзывами</h2>
         </section>
     </main>
-    <footer class="footer">
+    <section>
+        <h2>Слайдер с отзывами</h2>
+    </section>
+    <footer сlass="footer">
         <div class="container">
             <div class="footer__contacts">
-                <div class="footer__contact-info">
-                    <span>Email: <a href="">Construct_renovat@yandex.ru</a></span><br>
-                    <span>Телефон: 8(952) 088 37-30</span><br>
-                    <span>Адрес: </span>
-                </div>
-                <div class="map">
-                    <h2>место под карту</h2>
+                <span>Email: Construct&Renovat@yandex.ru</span><br>
+                <span>Phone: 8 (952) 088 37-30 </span><br>
+                <span>Adress: Komsomolskiy Prospect, 10</span><br><br>
+                <span>Мы в соцсетях:</span>
+                <div class="footer__contacts-social">
+                    <a href=""><img src="images/svg/social-telegram.svg" alt=""></a>
+                    <a href=""><img src="images/svg/social-vkontakte.svg" alt=""></a>
+                    <a href=""><img src="images/svg/social-youtube.svg" alt=""></a>
+                    <a href=""><img src="images/svg/support.svg" alt=""></a>
                 </div>
             </div>
+            <div class="footer__map">
+                <p>Тут будет карта</p>
+            </div>
         </div>
-        
     </footer>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="js/script.js"></script>
 </html>

@@ -28,6 +28,14 @@ body {
  * Render the `main` element consistently in IE.
  */
 
+span {
+    font-size: 20px;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
 main {
     display: block;
 }

@@ -1,0 +1,10 @@
+.splide__track {
+  max-height: 900px;
+  background: #cc66ff;
+  color: #fff;
+}
+
+.splide__track .splide__slide img {
+  width: 100%;
+  
+};
