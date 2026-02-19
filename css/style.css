@@ -51,6 +51,7 @@ ul li{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 /*! Стили для логотипа 
   /*?  width: 50px - ширина логотипа
@@ -104,22 +105,51 @@ ul li{
   color: #fff;
 }
 
-.splide__track .splide__slide img {
-  width: 100%;
+.splide__slide{
+    display: flex;
+    flex-direction: column;
+    height: 800px; /* Фиксированная высота для слайдов */
+    /*background: #cc66ff; !* Фон для областей, не занятых изображением *!*/
+}
 
-};
+.splide__text{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.splide__slide h2{
+
+}
+
+.splide__slide p{
+
+}
+
+.splide__slide .btn{
+
+}
+
+
+.splide__slide img {
+    width: 100%;
+
+
+}
 
 /** Секция карточек */
 .cards-choise .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     gap: 30px;
     padding: 25px 0;
 }
 
 .cards-choise__item {
     width: 100%;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
     background: #000000;
     border-radius: 10px;
@@ -131,6 +161,7 @@ ul li{
 .cards-choise__text {
     text-align: center;
     padding: 0 25px;
+    flex: 1;
 }
 
 .cards-choise__title {
@@ -152,7 +183,7 @@ ul li{
 
 .cards-choise .btn{
     display: flex;
-    width: 16%;
+    width: fit-content;
     text-align: center;
     margin: 0 auto;
 }
@@ -272,16 +303,16 @@ ul li{
 
 }
 .cards-wood{
-    background-image: url('images/assortment/brus.jpg');
+    background-image: url('../images/assortment/brus.jpg');
 }
 .cards-hiteck{
-    background-image: url('images/assortment/hi-tek-v2.jpg');
+    background-image: url('../images/assortment/hi-tek-v2.jpg');
 }
 .cards-bunya{
-    background-image: url('images/assortment/banya.jpg');
+    background-image: url('../images/assortment/banya.jpg');
 }
 .cards-uchastok{
-    background-image: url('images/assortment/uchastok-v2.jpg');
+    background-image: url('../images/assortment/uchastok-v2.jpg');
 }
 
 
